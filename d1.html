@@ -23,7 +23,7 @@
                     In simple terms, a <q class="q">data structure is a particular way of organizing data within a computer so that it can be used effectively.</q>
                 </li>
             </ul>
-            Classification of data structure
+            <h2>Classification of data structure</h2>
             <ul>
                 <li>
                     <h2>Data Structures</h2>
@@ -65,10 +65,10 @@
             </ul>
         <ul>
             <li>
-                Primitive Data Structures : These are defined by the language i.e this are builtin like interger,real,character,boolean.
+                <h3>Primitive Data Structures</h3> These are defined by the language i.e this are builtin like interger,real,character,boolean.
             </li> 
             <li>
-                Non-Primitive Data Structures : There are Dervied data structure i.e there are combine form of primitive data structures.These are classified into 2 types :- 
+                <h3>Non-Primitive Data Structures</h3> There are Dervied data structure i.e there are combine form of primitive data structures.These are classified into 2 types :- 
                 <ul>
                     <li>
                         Linear Data Structures : 
@@ -207,15 +207,55 @@
                                 }
                             </pre>
                             Let us know line by line.
-                        </li>
-                        <li>
-                            #include &lt;iostream&gt
-                            <br>
-                            
+                            <pre>
+                                // The Double slash lines are used to comment single line.
+                                For multiple comment lines we use <!---->
+                                The program starts with the line
+                                #include &lt;iostream&gt
+                                // were <q>#</q> is pound sign <q>inculde</q> is a directive which procressed by preprocess directives it tells to inculde the file.In this case the file is <q>iostream</q>.
+                                This statement tells the complier to inculde iostream file.Becase iostream file containes declarations of all input and output functions.
+                                The next statement is 
+                                using namespace std;
+                                In this using &rarr; use
+                                namespace &rarr; spaces are created to aviod conflicts(like using same variables,functions,etc)
+                                std &rarr; standard
+                                The overall meaning is use the standard namespace if don't use this we can use as std::cout,std::cin,std::endl,etc;
+                                The nextline is 
+                                int main(){
+                                }
+                                where int &rarr; retrun type
+                                main() &rarr; main function
+                                The over meaning is the main function return integer data.
+                                fuction is group of instructions that will perform a particular task.
+                                then last line is 
+                                cout << "Hello World!" << endl;
+                                return 0;
+                                This tells the complier to print/display Hello World! statement as output, where <q>;</q> tells the end of the statement,endl is another fuction which means the end of line.
+                                cout &rarr; output function
+                                <q><<</q> &rarr; definee what is to be printed
+                                retrun 0 &rarr; it a statement use to return a value from a function.It is usally last line before the function ends.
+                            </pre> 
+                            we get output as 
+                            <pre>
+                                Hello World!
+                            </pre>
+                            In the above example program we followed a particular order like 
+                            <pre>
+                                #include &lt;iostream&gt // <q>directive</q>
+                                using namespace std; // <q>included standard namespace</q>
+                                int main() // <q>begining of a main function</q>
+                                {
+                                    cout << "Hello world!" << endl; //<q>statements in mainfuction</q>
+                                    return 0;
+                                } // <q>end of program or function</q> 
+                            </pre>
                         </li>
                     </ul>
                 </li>
             </ul>
+        </div>
+        <div>
+            
         </div>
     <script src="d1.js"></script>
 </body>
