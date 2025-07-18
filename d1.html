@@ -432,8 +432,8 @@
                                 void : An entity without a value.Which is used Fuctions that does not return any value.
                             </li>
                             Range of each and every data type
-                            <table border="3" style="border-color: cadetblue; text-align: center;">
-                                <tr class="q">
+                            <table border="3" style="border-color: #2a9d8f; text-align: center;">
+                                <tr style="color: #e76f51;">
                                     <th>Type</th>
                                     <th>Size(Bytes)</th>
                                     <th>Minimum</th>
@@ -520,9 +520,295 @@
                             </li>
                         </ul> 
                     </li>
+                    <h3>Variable in C++</h3>
                     <li>
-
+                        A variable is a term used for the name give to any value in c++.It is the basic unit of storage in a program and its value can be changed as per the execution of the program.<q class="q">All variables in C++ muat be declared before used.</q>
+                        <ul>
+                            <li>
+                                Variable declaration :  We can decalre a variable as data_type name_data_type,we decalre single or multiple data types at a time. 
+                                <pre>
+                                    For example
+                                    int a; //single declaration
+                                    int a,d,c,d //Multiple declaration
+                                </pre>
+                            </li>
+                            <li>
+                                Variable definition : It is a part where the variable is assigned a memory location and a variable.
+                                <pre>
+                                    For example
+                                    int a = 45;
+                                    float b = 4.5;
+                                </pre>
+                            </li>
+                            <li>
+                                The name of a variable can be composed of letters,digits, and the underscore character.It must begin with either a letter or an underscore.<q class="q">Upper and lowercase letters are distinct becase C++ is case-sensitive.</q>
+                            </li>
+                            <li>
+                                <h3>Types ot Variables(based on data types)</h3>
+                                <ol>
+                                    <li>
+                                        int : For integer values.
+                                    </li>
+                                    <li>
+                                        char : For charater values like 'a' ,'A',etc 
+                                    </li>
+                                    <li>
+                                        bool : Holds values : true and false.
+                                    </li>
+                                    <li>
+                                        double : double-precision float point value.
+                                    </li>
+                                    <li>
+                                        float : single-precision float point value.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>
+                                    Types of Variables(based on scope)
+                                </h3>
+                                <li>
+                                    scope : Where we can able to acess the variables like can be acess throughout the program or limited.
+                                </li>
+                                <ol>
+                                    <li>
+                                        Local Variables : A variable that is local to a block or method of a program.The scope of this variable is limit to withon the method or block.
+                                    </li>
+                                    <li>
+                                        Global variables : A variable that is declared outside a block or method of a program.The scope of this variable is throughout the program.
+                                    </li>
+                                    <pre>
+                                        Example for local & global variables.
+                                        #include&lt;iostream&gt
+                                        using namespace std;
+                                        int h = 20 //Global variable
+                                        int main(){
+                                            int h-10;
+                                            cout << h; //local variable
+                                            return 0;
+                                        }
+                                    </pre>
+                                </ol>
+                            </li>
+                        </ul>
                     </li>
+                    <h3>Operators in C++</h3>
+                    <ul>
+                    <li>
+                        Operators : The operators are special built -in symbols that  have functionality,and work on operands.
+                    </li>
+                    <li>
+                        operands : an input to an operator.
+                    </li>
+                    <pre>
+                        for example
+                        int a=5+3
+                        In above line
+                        a,5,3 are operands
+                        =,+ are operators
+                    </pre>
+                    <li>
+                        Arity : How many operands an operator takes
+                        <ol type="i">
+                            <li>
+                                unary operator : has one operand.
+                            </li>
+                            <li>
+                                binary : has two operands.
+                            </li>
+                            <li> 
+                                ternary : has three operands.
+                            </li>
+                        </ol>
+                    </li>
+                    <h2>Types of Operators</h2>
+                    <ol>
+                        <li>
+                            <h3>Assignment operator</h3>
+                            Value on the right side(R-value) is assigned to(i.e.stored in) the location (variable) on the left side(L-value)
+                            <ul>
+                                <li>
+                                    R-value : any expression that evaulates to a single value (the name comes from the "right" side of an assignment operator)
+                                </li>
+                                <li>
+                                    L-value : A storage location.A variable or a preference to a loaction(the name comes from the "left" side of the assignment operator)
+                                </li>
+                                Typical usage : variable_name = expression
+                                <li>
+                                    Be careful to not confuse assignment = with comparison ==
+                                </li> 
+                            </ul>
+                            <h3>
+                                Arithmetic Operators
+                            </h3>
+                            <table border="3" style="border-color: #2a9d8f; text-align: center;">
+                                <tr style="color: #e76f51;">
+                                    <th>Name</th>
+                                    <th>Symbol</th>
+                                    <th>Arity</th>
+                                    <th>Usage</th>
+                                </tr>
+                                <tr>
+                                    <td>Add</td>
+                                    <td>+</td>
+                                    <td>binary</td>
+                                    <td>x + y</td>
+                                </tr>
+                                <tr>
+                                    <td>subtract</td>
+                                    <td>-</td>
+                                    <td>binary</td>
+                                    <td>x - y</td>
+                                </tr>
+                                <tr>
+                                    <td>multiply</td>
+                                    <td>*</td>
+                                    <td>binary</td>
+                                    <td>x * y</td>
+                                </tr>
+                                <tr>
+                                    <td>divide</td>
+                                    <td>/</td>
+                                    <td>binary</td>
+                                    <td>x / y</td>
+                                </tr>
+                                <tr>
+                                    <td>modulus</td>
+                                    <td>%</td>
+                                    <td>binary</td>
+                                    <td>x % y</td>
+                                </tr>
+                                <tr>
+                                    <td>minus</td>
+                                    <td>-</td>
+                                    <td>unary</td>
+                                    <td>x-- or --x</td>
+                                </tr>
+                                <tr>
+                                    <td>plus</td>
+                                    <td>+</td>
+                                    <td>unary</td>
+                                    <td>++x or x++</td>
+                                </tr>
+                            </table>
+                            <h3>
+                                Arithmetic Operators Precedence
+                            </h3>
+                            <ul>
+                                <li>Arithmetic has usual Precedence.
+                                    <ol>
+                                        <li>
+                                            parentheses
+                                        </li>
+                                        <li>
+                                            Unary minus
+                                        </li>
+                                        <li>
+                                            *,/,and % 
+                                        </li>
+                                        <li>
+                                            + and -
+                                        </li>
+                                        <li>
+                                            operators on same level associate left to right.
+                                        </li>
+                                        <pre>
+                                            for example
+                                            (5+4(3*2)+1)
+                                            can be solved as 
+                                            (5+4(3*2)+1)
+                                            =(5+4(6)+1)
+                                            =(5+24+1)
+                                            =30
+                                        </pre>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <h3>
+                                Compund assignment operators
+                            </h3>
+                            short form of assignment operator like writing 
+                            <pre>
+                                x+=10;
+                            </pre>
+                            instead of
+                            <pre>
+                                x=x+10;
+                            </pre>
+                            The compound assign ment operators are :-
+                            <ol>
+                                <li>+=</li>
+                                <li>-=</li>
+                                <li>*=</li>
+                                <li>/=</li>
+                                <li>%=</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>
+                                Relational Operators
+                            </h3>
+                            These are use to compare values or operands.
+                            <h3>Types of relational operators</h3>
+                            <ol>
+                                <li>
+                                    == : Checks if the value of two operands are equal or not,if yes then conditional becomes true.
+                                </li>
+                                <li>
+                                    != : Checks if the value of two operands are equal or not,if not equal then conditional becomes true.
+                                </li>
+                                <li>
+                                    > : Checks if the value of left operands is greaterthan the value right operand ,if yes then conditional becomes true.
+                                </li>
+                                <li>
+                                    < : Checks if the value of left operands is lessthan the value right operand ,if yes then conditional becomes true.
+                                </li>
+                                <li>
+                                    >= : Checks if the value of left operands is graterthan or equalto the value right operand ,if yes then conditional becomes true.
+                                </li>
+                                <li>
+                                    <= : Checks if the value of left operands is lessthan  or equalto the value right operand ,if yes then conditional becomes true.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Logical Operators</h3>
+                            The combine 2 or more conditions to compliment the evaluation of the original condition. 
+                            <h3>Types of Logical Operators</h3>
+                            <ol>
+                                <li>
+                                    && : Called Logical AND operator.If both the operands are non-zero(true),then the condition becomes true.
+                                </li>
+                                <li>
+                                    || : Called Logical OR operator.If any of the two operands is non-zero(true),then the condition becomes true.
+                                </li>
+                                <li>
+                                    ! : Called Logical NOT operator.Used to reverse the logical state of its operand.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Other Operators</h3>
+                            <ol>
+                                <li>
+                                    sizeof() : It is use to compute the size of an operand.
+                                </li>
+                                <li>
+                                    conditional operator : It is use to check the condition.for example ternary operator <pre>
+                                        a>b ? true : false
+                                        int this code if the condition a>b is true then <q class="q">true</q> is displayed or if false then <q class="q">false</q> is displayed
+                                    </pre> 
+                                </li>
+                                <li>
+                                    comma operator(,) : It is a binary operator it evaulates the first operand and discords the result then evaulates second operand and retruns the value.
+                                </li>
+                                <li>
+                                    The comma opertore has the lowest precedence and it act as both as operator and a separator.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    </ul>
             </ul>
         </div>
         <div>
