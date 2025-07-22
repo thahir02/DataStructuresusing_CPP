@@ -909,14 +909,123 @@
                                 </ul>
                             </li>
                             </ul>
-                        </li>
-
-                    </li>
                 </ul>
             </ul>
         </div>
         <div>
-            
+            <h2>Array and Vector</h2>
+            <ul>
+                 <h3>Arrays</h3>
+                 <li>
+                    Collection os similar data items.
+                 </li>
+                 <li>
+                    Stored at contiguous memory location.
+                 </li>
+                 <li>
+                    Indexed from 0 to n-1.
+                 </li>
+                 <li>
+                    can be used to store the collection of primitive data types such as int,float,double,char,etc of any particular type.And it can also store derived data types like pointers,stack,Queue,etc,
+                 </li>
+                 <li>
+                    Declaration : tpye &lt;array name&gt[size] For example
+                    <pre>
+                    int arr1[10];
+                    </pre>
+                 </li>
+                 <h3>Advantages & Disadvantages of Array</h3>
+                 <h3>Advantages</h3>
+                 <li>
+                    Elements can be accessed using index values.
+                 </li>
+                 <li>
+                    Stores large data in fewer lines of code.
+                 </li>
+                 <li>
+                    Easy traversal and sorting of array elements.
+                 </li>
+                 <h3>Disadvantages</h3>
+                 <li>
+                    Size is fixed at the time of declaration;not dynamic.
+                 </li>
+                 <li>
+                    Costly insertion and deletion.
+                 </li>
+                 <h2>
+                    Vectors in C++
+                 </h2>
+                 <li>
+                    Vectors is a template class and is C++ only construct.
+                 </li>
+                 <li>
+                    Another form of array i.e dynamic.
+                 </li>
+                 <li>
+                    It is a part of STL(Standard Template Library) in only in C++.
+                 </li>
+                 <li>
+                    Arrays that can resize themselves i.e. dynamic arrays.
+                 </li>
+                 <li>
+                    Vector elements are placed in continguous storage so that they can be accessed and traversed using iterators.
+                 </li>
+                 <li>
+                    Iterators : begin(),end(),size() etc.
+                 </li>
+                 <h3>
+                    Advantages and Disadvantages of Vectors
+                </h3>
+                 <h3>
+                    Disadvantages of Vector
+                 </h3>
+                 <li>
+                    A vector is an object,memory consumption is more.
+                 </li>
+                 <h2>comparison between Vectors and Arrays</h2>
+                 <table border="3" style=" border-color: #2a9d8f;">
+                    <tr style="color: #e76f51;">
+                        <th>
+                            Arrays
+                        </th>
+                        <th>
+                            Vectors
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            It is a fixed size sequential collections of elements of same type.It is Index based. 
+                        </td> 
+                        <td>
+                            It is a sequential container.It is not index based.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            It is fixed sized.
+                        </td>
+                        <td>
+                            It is dynamic in size.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            The memory size is efficient.
+                        </td>
+                        <td>
+                            It occupies more memory than the arrays.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Accessing of elements takes connstant time,irresepective of the loaction,due to contiguous memory loction.
+                        </td>
+                        <td>
+                            Accessing of elements takes more time for traversal.
+                        </td>
+                    </tr>
+                 </table>
+            </ul>
         </div>
     <script src="d1.js"></script>
 </body>
