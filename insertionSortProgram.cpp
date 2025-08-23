@@ -1,0 +1,38 @@
+#include <iostream>
+#include <algorithm>  // for swap()
+using namespace std;
+
+void insertionSort(int arr[], int n) {
+    int key, i, j;
+    for (i = 1; i < n; i++) {
+        key = arr[i]; 
+        j = i - 1; 
+        
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j]; 
+            j = j - 1;           
+        }
+        arr[j + 1] = key;   
+    }
+}
+int main() {
+    int n;
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; i++) cin >> arr[i];
+
+    cout << "Before sorting: ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " ";
+    cout << endl;
+
+    insertionSort(arr, n);
+
+    cout << "After sorting: ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " ";
+    cout << endl;
+
+    return 0;
+}
